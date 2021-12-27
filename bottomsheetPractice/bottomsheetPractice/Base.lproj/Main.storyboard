@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="bottomsheetPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWm-Bh-4xz">
+                                <rect key="frame" x="20" y="94" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qzq-pL-Kox"/>
+                                </constraints>
+                                <state key="normal" title="테이블 모달 버튼"/>
+                                <connections>
+                                    <action selector="onModalBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SaG-U1-4Mb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUt-py-l7b">
+                                <rect key="frame" x="20" y="174" width="374" height="30"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="하프 모달 버튼"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kUt-py-l7b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7IP-Bx-J5L"/>
+                            <constraint firstItem="nWm-Bh-4xz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CLu-h2-GKH"/>
+                            <constraint firstItem="kUt-py-l7b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="D7v-aO-PcT"/>
+                            <constraint firstItem="nWm-Bh-4xz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aZU-UF-jeU"/>
+                            <constraint firstItem="kUt-py-l7b" firstAttribute="top" secondItem="nWm-Bh-4xz" secondAttribute="bottom" constant="30" id="ewd-A2-pqX"/>
+                            <constraint firstItem="nWm-Bh-4xz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="jJc-EJ-Qr8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="halfModalBtn" destination="kUt-py-l7b" id="uyb-zt-WG8"/>
+                        <outlet property="tableModalBtn" destination="nWm-Bh-4xz" id="y1O-cl-lme"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
