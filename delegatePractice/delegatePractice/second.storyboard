@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="Y6W-OH-hqX" customClass="SecondViewController" customModule="delegatePractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="라벨 텍스트 전달하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWj-rJ-HIt">
+                                <rect key="frame" x="136" y="84" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vda-U0-aaF">
+                                <rect key="frame" x="20" y="135" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBc-wN-NBP">
+                                <rect key="frame" x="136" y="199" width="142" height="30"/>
+                                <state key="normal" title="라벨 텍스트 데이터 전달"/>
+                                <connections>
+                                    <action selector="labelTapButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bu3-Fz-gJs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="테이블뷰 전달하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fr-NK-frc">
+                                <rect key="frame" x="146" y="489" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5br-n2-LnS">
+                                <rect key="frame" x="20" y="540" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgy-Kr-Eyb">
+                                <rect key="frame" x="144.5" y="594" width="125" height="30"/>
+                                <state key="normal" title="테이블뷰 데이터 전달"/>
+                                <connections>
+                                    <action selector="tableTapButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fF6-W1-v07"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vda-U0-aaF" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="05d-fO-AAB"/>
+                            <constraint firstItem="5br-n2-LnS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="4sb-6Z-0qD"/>
+                            <constraint firstItem="5br-n2-LnS" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="6KE-1R-RFA"/>
+                            <constraint firstItem="vda-U0-aaF" firstAttribute="top" secondItem="FWj-rJ-HIt" secondAttribute="bottom" constant="30" id="AGn-7v-C3o"/>
+                            <constraint firstItem="FWj-rJ-HIt" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Bw8-fg-No8"/>
+                            <constraint firstItem="5Fr-NK-frc" firstAttribute="top" secondItem="EBc-wN-NBP" secondAttribute="bottom" constant="260" id="CVM-Vb-JKU"/>
+                            <constraint firstItem="jgy-Kr-Eyb" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="HBg-xJ-YEH"/>
+                            <constraint firstItem="FWj-rJ-HIt" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="Idf-J6-qGG"/>
+                            <constraint firstItem="EBc-wN-NBP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="RCo-q7-sEw"/>
+                            <constraint firstItem="5Fr-NK-frc" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="SS6-38-MRD"/>
+                            <constraint firstItem="5br-n2-LnS" firstAttribute="top" secondItem="5Fr-NK-frc" secondAttribute="bottom" constant="30" id="WlT-O9-owB"/>
+                            <constraint firstItem="jgy-Kr-Eyb" firstAttribute="top" secondItem="5br-n2-LnS" secondAttribute="bottom" constant="20" id="Xik-yE-tq1"/>
+                            <constraint firstItem="vda-U0-aaF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="hBv-pL-nK2"/>
+                            <constraint firstItem="EBc-wN-NBP" firstAttribute="top" secondItem="vda-U0-aaF" secondAttribute="bottom" constant="30" id="lPm-Qc-4WY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelTextField" destination="vda-U0-aaF" id="EHu-IO-2yz"/>
+                        <outlet property="tableTextField" destination="5br-n2-LnS" id="N4Q-s0-h5s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="81"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
