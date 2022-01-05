@@ -1,0 +1,6 @@
+framework module Pods_pagerViewPractice {
+  umbrella header "Pods-pagerViewPractice-umbrella.h"
+
+  export *
+  module * { export * }
+}

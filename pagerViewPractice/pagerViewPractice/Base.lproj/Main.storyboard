@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pagerViewPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ruf-f5-JBr" userLabel="pagerContainer">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEO-Eg-tXD" userLabel="pagerView" customClass="FSPagerView" customModule="FSPagerView">
+                                        <rect key="frame" x="0.0" y="259" width="414" height="300"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="g6d-y6-iMk"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xxA-Di-OlX" userLabel="pageControl" customClass="FSPageControl" customModule="FSPagerView">
+                                        <rect key="frame" x="30" y="574" width="354" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="5nH-3Z-R08"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstItem="hEO-Eg-tXD" firstAttribute="centerY" secondItem="Ruf-f5-JBr" secondAttribute="centerY" id="497-q8-Lgj"/>
+                                    <constraint firstItem="xxA-Di-OlX" firstAttribute="top" secondItem="hEO-Eg-tXD" secondAttribute="bottom" constant="15" id="5Xz-jK-yM2"/>
+                                    <constraint firstItem="hEO-Eg-tXD" firstAttribute="leading" secondItem="Ruf-f5-JBr" secondAttribute="leading" id="Im3-sE-y43"/>
+                                    <constraint firstAttribute="trailing" secondItem="xxA-Di-OlX" secondAttribute="trailing" constant="30" id="NYH-fe-9dh"/>
+                                    <constraint firstAttribute="trailing" secondItem="hEO-Eg-tXD" secondAttribute="trailing" id="T4h-wZ-MHU"/>
+                                    <constraint firstItem="xxA-Di-OlX" firstAttribute="leading" secondItem="Ruf-f5-JBr" secondAttribute="leading" constant="30" id="mkS-ed-pRK"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1M-3m-amC">
+                                <rect key="frame" x="30" y="433" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Dah-5P-D24"/>
+                                    <constraint firstAttribute="width" constant="30" id="rkL-nI-jy5"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="chevron.left" catalog="system"/>
+                                <connections>
+                                    <action selector="onLeftBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yTX-Zx-jVF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJj-9j-uvj">
+                                <rect key="frame" x="354" y="433" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="OAy-VA-Nuf"/>
+                                    <constraint firstAttribute="height" constant="30" id="QoI-hl-XkU"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="chevron.right" catalog="system"/>
+                                <connections>
+                                    <action selector="onRightBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Dr-Km-pDE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f1M-3m-amC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IT2-vH-VhN"/>
+                            <constraint firstItem="aJj-9j-uvj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jbn-Pr-baC"/>
+                            <constraint firstItem="Ruf-f5-JBr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KHq-Yy-x5b"/>
+                            <constraint firstItem="Ruf-f5-JBr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VWm-h5-VHJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ruf-f5-JBr" secondAttribute="bottom" id="XUe-sH-vzZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aJj-9j-uvj" secondAttribute="trailing" constant="30" id="YvL-UR-70X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ruf-f5-JBr" secondAttribute="trailing" id="aau-fz-2Yo"/>
+                            <constraint firstItem="f1M-3m-amC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="z22-pf-DCE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leftBtn" destination="f1M-3m-amC" id="fS7-Ou-Cn6"/>
+                        <outlet property="myPageControl" destination="xxA-Di-OlX" id="8OM-nc-DPB"/>
+                        <outlet property="myPagerView" destination="hEO-Eg-tXD" id="1Li-La-7G4"/>
+                        <outlet property="rightBtn" destination="aJj-9j-uvj" id="6NX-zd-wIm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60.869565217391312" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
