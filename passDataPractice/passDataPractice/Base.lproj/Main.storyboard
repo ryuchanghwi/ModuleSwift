@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lNE-k4-wtb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="6oj-du-OaV">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="lNE-k4-wtb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YFh-Bg-Eog">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fjI-97-kFW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tYV-Hm-Mga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-757" y="84"/>
+        </scene>
+        <!--Property데이터전달-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="PropertyFirstVC" id="BYZ-38-t0r" customClass="PropertyFirstVC" customModule="passDataPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.프로퍼티에 접근해 데이터 넘기기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEG-kR-Jjr">
+                                <rect key="frame" x="30" y="64" width="354" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4m-SO-fiR">
+                                <rect key="frame" x="50" y="250.5" width="314" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Property데이터전달">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="properryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0yf-pk-Jfc"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hXe-rG-Yua">
+                                <rect key="frame" x="30" y="150.5" width="354" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ONT-SI-seN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ldv-cD-4zg">
+                                <rect key="frame" x="152.5" y="772" width="109" height="30"/>
+                                <state key="normal" title="Segue데이터전달"/>
+                                <connections>
+                                    <action selector="SegueVCButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r4L-Tj-l3x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CEG-kR-Jjr" firstAttribute="centerX" secondItem="Ldv-cD-4zg" secondAttribute="centerX" id="76E-vl-sjp"/>
+                            <constraint firstItem="hXe-rG-Yua" firstAttribute="top" secondItem="CEG-kR-Jjr" secondAttribute="bottom" constant="60" id="F10-fM-W1t"/>
+                            <constraint firstItem="hXe-rG-Yua" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="GVw-X4-g3p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hXe-rG-Yua" secondAttribute="trailing" constant="30" id="Kb8-SA-5rP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ldv-cD-4zg" secondAttribute="bottom" constant="60" id="MKh-iL-XTW"/>
+                            <constraint firstItem="CEG-kR-Jjr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="XnI-SW-KxE"/>
+                            <constraint firstItem="v4m-SO-fiR" firstAttribute="top" secondItem="hXe-rG-Yua" secondAttribute="bottom" constant="50" id="eqI-x5-m83"/>
+                            <constraint firstItem="CEG-kR-Jjr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="go6-yz-0xD"/>
+                            <constraint firstItem="CEG-kR-Jjr" firstAttribute="centerX" secondItem="hXe-rG-Yua" secondAttribute="centerX" id="iEv-7F-gP8"/>
+                            <constraint firstItem="v4m-SO-fiR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="kyF-eC-BuS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v4m-SO-fiR" secondAttribute="trailing" constant="50" id="zeW-3b-Bf7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Property데이터전달" id="acD-TU-geG"/>
+                    <connections>
+                        <outlet property="propertyTextField" destination="hXe-rG-Yua" id="Ylw-Mf-dyG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

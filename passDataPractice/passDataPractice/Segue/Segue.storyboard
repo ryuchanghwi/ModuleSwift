@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Segue FirstVC-->
+        <scene sceneID="3Qg-pX-eKS">
+            <objects>
+                <viewController storyboardIdentifier="SegueFirstVC" id="nYb-RI-0HC" customClass="SegueFirstVC" customModule="passDataPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y59-kV-Ok7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vyg-iS-ccU">
+                                <rect key="frame" x="30" y="151" width="354" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YqV-IQ-uC4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfi-GW-hKf">
+                                <rect key="frame" x="50" y="251" width="314" height="30"/>
+                                <state key="normal" title="Segue데이터전달"/>
+                                <connections>
+                                    <segue destination="Y6W-OH-hqX" kind="show" id="v2t-6P-Sco"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.Segue로 데이터 넘기기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVy-q0-r2C">
+                                <rect key="frame" x="10" y="64" width="394" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2C6-3O-DWR">
+                                <rect key="frame" x="131.5" y="772" width="151" height="30"/>
+                                <state key="normal" title="프로퍼티와 함수 이용하기"/>
+                                <connections>
+                                    <action selector="PropertyFuncButton:" destination="nYb-RI-0HC" eventType="touchUpInside" id="uJw-10-XAz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vAa-aQ-Bty"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vyg-iS-ccU" firstAttribute="centerX" secondItem="Y59-kV-Ok7" secondAttribute="centerX" id="B7o-z0-fua"/>
+                            <constraint firstItem="lfi-GW-hKf" firstAttribute="leading" secondItem="vAa-aQ-Bty" secondAttribute="leading" constant="50" id="DMz-di-dAQ"/>
+                            <constraint firstItem="vAa-aQ-Bty" firstAttribute="bottom" secondItem="2C6-3O-DWR" secondAttribute="bottom" constant="60" id="FS7-6s-GmD"/>
+                            <constraint firstItem="wVy-q0-r2C" firstAttribute="leading" secondItem="vAa-aQ-Bty" secondAttribute="leading" constant="10" id="YxI-N4-38Y"/>
+                            <constraint firstItem="Vyg-iS-ccU" firstAttribute="top" secondItem="wVy-q0-r2C" secondAttribute="bottom" constant="60" id="amu-ar-0aW"/>
+                            <constraint firstItem="wVy-q0-r2C" firstAttribute="top" secondItem="vAa-aQ-Bty" secondAttribute="top" constant="20" id="dyn-I8-aUl"/>
+                            <constraint firstItem="Vyg-iS-ccU" firstAttribute="leading" secondItem="vAa-aQ-Bty" secondAttribute="leading" constant="30" id="gbp-41-bYf"/>
+                            <constraint firstItem="lfi-GW-hKf" firstAttribute="top" secondItem="Vyg-iS-ccU" secondAttribute="bottom" constant="50" id="i6r-SO-XbS"/>
+                            <constraint firstItem="lfi-GW-hKf" firstAttribute="centerX" secondItem="Y59-kV-Ok7" secondAttribute="centerX" id="ln8-vF-5wn"/>
+                            <constraint firstItem="wVy-q0-r2C" firstAttribute="centerX" secondItem="Y59-kV-Ok7" secondAttribute="centerX" id="n2e-rZ-tfQ"/>
+                            <constraint firstItem="2C6-3O-DWR" firstAttribute="centerX" secondItem="Y59-kV-Ok7" secondAttribute="centerX" id="sri-oO-cQ1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="segueTextField" destination="Vyg-iS-ccU" id="W9s-sa-KgS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZkI-2B-jyD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-854" y="89"/>
+        </scene>
+        <!--Segue SecondVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SegueSecondVC" id="Y6W-OH-hqX" customClass="SegueSecondVC" customModule="passDataPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIT-7G-lHW">
+                                <rect key="frame" x="177.5" y="77" width="59" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vkw-SW-bsk">
+                                <rect key="frame" x="175" y="157" width="64" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="뒤로 가기"/>
+                                <connections>
+                                    <action selector="backButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="q7I-FM-dHM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.Segue로 데이터 넘기기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oq-4j-zCy">
+                                <rect key="frame" x="93.5" y="20" width="227.5" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0Oq-4j-zCy" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="2Lg-bw-N7x"/>
+                            <constraint firstItem="fIT-7G-lHW" firstAttribute="top" secondItem="0Oq-4j-zCy" secondAttribute="bottom" constant="30" id="BoQ-Y1-6FL"/>
+                            <constraint firstItem="fIT-7G-lHW" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="IZt-dt-BNg"/>
+                            <constraint firstItem="Vkw-SW-bsk" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="pmd-T3-pdu"/>
+                            <constraint firstItem="0Oq-4j-zCy" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="uVJ-bF-yQ4"/>
+                            <constraint firstItem="Vkw-SW-bsk" firstAttribute="top" secondItem="fIT-7G-lHW" secondAttribute="bottom" constant="50" id="vW4-y9-9AP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dvH-b4-rXA"/>
+                    <connections>
+                        <outlet property="segueTextLabel" destination="fIT-7G-lHW" id="g7g-Y3-6V4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
