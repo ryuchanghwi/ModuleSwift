@@ -8,24 +8,29 @@
 import Foundation
 import UIKit
 
-class DelegationSecondVC: UIViewController, LabelChangeDelegate {
+protocol LabelChangeDelegate {
+    func onChange(data: String)
+}
+
+class DelegationSecondVC: UIViewController {
     
     @IBOutlet weak var delegateTextField: UITextField!
     
+    var delegate: LabelChangeDelegate?
     
     
-    func onChange() {
-        mainVC?.delegateLabel.text = delegateTextField.text
-    }
-    var mainVC : DelegationFirstVC?
-    
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    
     @IBAction func delegateButton(_ sender: Any) {
-        onChange()
+        if let text = delegateTextField.text {
+            delegate?.onChange(data: text)
+        }
         self.dismiss(animated: true, completion: nil)
+        
     }
 }

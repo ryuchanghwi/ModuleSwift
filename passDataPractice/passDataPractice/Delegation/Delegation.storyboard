@@ -16,25 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axB-bX-DGr">
-                                <rect key="frame" x="186" y="120" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="바뀔 라벨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axB-bX-DGr">
+                                <rect key="frame" x="170" y="121" width="74.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Haz-Cr-Q71">
-                                <rect key="frame" x="184" y="225" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Haz-Cr-Q71">
+                                <rect key="frame" x="169.5" y="205" width="75" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="화면 전환"/>
                                 <connections>
                                     <action selector="didTapButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="veO-HO-89u"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJC-SP-k38">
-                                <rect key="frame" x="182" y="637" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJC-SP-k38">
+                                <rect key="frame" x="158.5" y="766" width="97" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="클로저 방법 "/>
                                 <connections>
                                     <action selector="moveToclosureVC:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CSo-h0-p58"/>
                                 </connections>
@@ -49,8 +48,14 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Haz-Cr-Q71" firstAttribute="top" secondItem="axB-bX-DGr" secondAttribute="bottom" constant="60" id="7js-rx-g4I"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="WJC-SP-k38" secondAttribute="bottom" constant="60" id="PrO-GJ-2Ws"/>
+                            <constraint firstItem="axB-bX-DGr" firstAttribute="top" secondItem="LqJ-cL-JNd" secondAttribute="bottom" constant="30" id="cyp-wp-WrP"/>
                             <constraint firstItem="LqJ-cL-JNd" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="gTx-eN-VF9"/>
+                            <constraint firstItem="WJC-SP-k38" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="jmM-OM-ecH"/>
                             <constraint firstItem="LqJ-cL-JNd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="kMm-Uj-xsE"/>
+                            <constraint firstItem="axB-bX-DGr" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="tSx-xX-gzA"/>
+                            <constraint firstItem="Haz-Cr-Q71" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="uAa-dJ-hfE"/>
                         </constraints>
                     </view>
                     <connections>
@@ -69,38 +74,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iuo-RC-eq3">
-                                <rect key="frame" x="159" y="140" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iuo-RC-eq3">
+                                <rect key="frame" x="20" y="151" width="374" height="60"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="o6K-wb-zqK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyd-CV-hE6">
-                                <rect key="frame" x="184" y="270" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyd-CV-hE6">
+                                <rect key="frame" x="172.5" y="261" width="69" height="30"/>
+                                <state key="normal" title="데이터 전달"/>
                                 <connections>
                                     <action selector="delegateButton:" destination="EuO-US-agt" eventType="touchUpInside" id="5Am-5K-ShD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuG-gt-npe">
-                                <rect key="frame" x="210" y="740" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="moveToclosureVC:" destination="r2b-ZU-zJb" eventType="touchUpInside" id="Z5a-be-9ZG"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.델리게이션으로 데이터 넘기기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1u1-g8-eFi">
+                                <rect key="frame" x="68.5" y="64" width="277.5" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Izd-As-zGY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Iuo-RC-eq3" firstAttribute="top" secondItem="1u1-g8-eFi" secondAttribute="bottom" constant="60" id="DY3-5o-b3V"/>
+                            <constraint firstItem="Iuo-RC-eq3" firstAttribute="leading" secondItem="Izd-As-zGY" secondAttribute="leading" constant="20" id="NW7-0X-e8g"/>
+                            <constraint firstItem="vyd-CV-hE6" firstAttribute="centerX" secondItem="Pfe-FW-UU8" secondAttribute="centerX" id="csh-MX-drn"/>
+                            <constraint firstItem="1u1-g8-eFi" firstAttribute="top" secondItem="Izd-As-zGY" secondAttribute="top" constant="20" id="gjW-E8-usV"/>
+                            <constraint firstItem="Iuo-RC-eq3" firstAttribute="centerX" secondItem="Pfe-FW-UU8" secondAttribute="centerX" id="jdI-6h-7XU"/>
+                            <constraint firstItem="1u1-g8-eFi" firstAttribute="centerX" secondItem="Pfe-FW-UU8" secondAttribute="centerX" id="oOv-rA-pwb"/>
+                            <constraint firstItem="vyd-CV-hE6" firstAttribute="top" secondItem="Iuo-RC-eq3" secondAttribute="bottom" constant="50" id="sqG-zb-RVI"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="delegateTextField" destination="Iuo-RC-eq3" id="bYG-oA-09r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hWL-iT-yOY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="r2b-ZU-zJb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="684" y="36"/>
         </scene>
@@ -108,6 +121,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

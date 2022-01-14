@@ -27,6 +27,7 @@ class CombineFirstVC : UIViewController {
         combineVC.didClickSubject.sink { writedText in
             self.combineLabel.text = writedText
         }.store(in: &subscriptions)
+        
     }
     
     @IBAction func moveToNoti(_ sender: Any) {

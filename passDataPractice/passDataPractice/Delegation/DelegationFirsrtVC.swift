@@ -8,11 +8,13 @@
 import Foundation
 import UIKit
 
-protocol LabelChangeDelegate {
-    func onChange()
-}
 
-class DelegationFirstVC : UIViewController {
+
+class DelegationFirstVC : UIViewController, LabelChangeDelegate {
+    
+    func onChange(data: String) {
+        delegateLabel.text = data
+    }
     
     @IBOutlet weak var delegateLabel: UILabel!
     override func viewDidLoad() {
@@ -22,10 +24,12 @@ class DelegationFirstVC : UIViewController {
     @IBAction func didTapButton(_ sender: Any) {
 
         guard let secondVC = storyboard?.instantiateViewController(identifier: "DelegationSecondVC") as? DelegationSecondVC else { return }
-        secondVC.mainVC = self
+        
+        secondVC.delegate = self
         
         secondVC.modalPresentationStyle = .fullScreen
         present(secondVC, animated: true, completion: nil)
+        
     }
     
     

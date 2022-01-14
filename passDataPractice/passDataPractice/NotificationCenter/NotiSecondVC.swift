@@ -18,7 +18,7 @@ class NotiSecondVC: UIViewController {
     
     @IBAction func backButton(_ sender: Any) {
         //이벤트를 알림
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: notificationName), object: notiTextField.text ?? "")
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: NotiFirstVC.notificationName.rawValue), object: notiTextField.text ?? "")
         dismiss(animated: true, completion: nil)
     }
     
