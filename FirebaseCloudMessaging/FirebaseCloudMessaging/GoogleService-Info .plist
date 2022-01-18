@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>791118956358-tmu12g8fmj335ig1vbi9a5j26pulusht.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.791118956358-tmu12g8fmj335ig1vbi9a5j26pulusht</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDTElgox1WSLOrrTTj7Dw5Mu0hl6rauZV4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>791118956358</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>project.FirebaseCloudMessaging</string>
+	<key>PROJECT_ID</key>
+	<string>warning-9076f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>warning-9076f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:791118956358:ios:74bd85cb516647d4208747</string>
+</dict>
+</plist>
