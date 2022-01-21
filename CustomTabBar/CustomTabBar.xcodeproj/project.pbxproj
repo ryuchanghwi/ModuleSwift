@@ -13,6 +13,10 @@
 		A56800C4279B1577001A7ADA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56800C2279B1577001A7ADA /* Main.storyboard */; };
 		A56800C6279B1579001A7ADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56800C5279B1579001A7ADA /* Assets.xcassets */; };
 		A56800C9279B1579001A7ADA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56800C7279B1579001A7ADA /* LaunchScreen.storyboard */; };
+		A56800D1279B2D4D001A7ADA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56800D0279B2D4D001A7ADA /* HomeViewController.swift */; };
+		A56800D3279B2D63001A7ADA /* SearchVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56800D2279B2D63001A7ADA /* SearchVIewController.swift */; };
+		A56800D5279B2D78001A7ADA /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56800D4279B2D78001A7ADA /* CameraViewController.swift */; };
+		A56800D7279B2D88001A7ADA /* ProfileVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56800D6279B2D88001A7ADA /* ProfileVIewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		A56800C5279B1579001A7ADA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A56800C8279B1579001A7ADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A56800CA279B1579001A7ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A56800D0279B2D4D001A7ADA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A56800D2279B2D63001A7ADA /* SearchVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVIewController.swift; sourceTree = "<group>"; };
+		A56800D4279B2D78001A7ADA /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		A56800D6279B2D88001A7ADA /* ProfileVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVIewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				A56800C5279B1579001A7ADA /* Assets.xcassets */,
 				A56800C7279B1579001A7ADA /* LaunchScreen.storyboard */,
 				A56800CA279B1579001A7ADA /* Info.plist */,
+				A56800D0279B2D4D001A7ADA /* HomeViewController.swift */,
+				A56800D2279B2D63001A7ADA /* SearchVIewController.swift */,
+				A56800D4279B2D78001A7ADA /* CameraViewController.swift */,
+				A56800D6279B2D88001A7ADA /* ProfileVIewController.swift */,
 			);
 			path = CustomTabBar;
 			sourceTree = "<group>";
@@ -141,6 +153,10 @@
 				A56800C1279B1577001A7ADA /* ViewController.swift in Sources */,
 				A56800BD279B1577001A7ADA /* AppDelegate.swift in Sources */,
 				A56800BF279B1577001A7ADA /* SceneDelegate.swift in Sources */,
+				A56800D1279B2D4D001A7ADA /* HomeViewController.swift in Sources */,
+				A56800D3279B2D63001A7ADA /* SearchVIewController.swift in Sources */,
+				A56800D7279B2D88001A7ADA /* ProfileVIewController.swift in Sources */,
+				A56800D5279B2D78001A7ADA /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
