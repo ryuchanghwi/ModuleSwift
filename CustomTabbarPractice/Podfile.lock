@@ -1,0 +1,21 @@
+PODS:
+  - FLUtilities (0.1.0)
+
+DEPENDENCIES:
+  - FLUtilities (from `https://github.com/Nickelfox/FLUtilities.git`)
+
+EXTERNAL SOURCES:
+  FLUtilities:
+    :git: https://github.com/Nickelfox/FLUtilities.git
+
+CHECKOUT OPTIONS:
+  FLUtilities:
+    :commit: d966feb4ebe332e9ecb4a005c7db848d9df89dc2
+    :git: https://github.com/Nickelfox/FLUtilities.git
+
+SPEC CHECKSUMS:
+  FLUtilities: 1b101734a35e894fd019e3fe6b430214c8fa3186
+
+PODFILE CHECKSUM: 1213b1384ba99303e30e3aad8bb34e64bed8ec44
+
+COCOAPODS: 1.11.2

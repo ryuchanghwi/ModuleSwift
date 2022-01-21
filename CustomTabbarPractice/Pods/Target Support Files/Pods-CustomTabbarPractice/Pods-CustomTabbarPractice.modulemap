@@ -1,0 +1,6 @@
+framework module Pods_CustomTabbarPractice {
+  umbrella header "Pods-CustomTabbarPractice-umbrella.h"
+
+  export *
+  module * { export * }
+}
