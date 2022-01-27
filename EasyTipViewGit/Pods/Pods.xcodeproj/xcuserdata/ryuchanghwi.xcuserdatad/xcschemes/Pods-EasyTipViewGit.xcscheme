@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1320"
+   LastUpgradeVersion = "1240"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "13285D54682BEAD805960F9E6EEB9949"
-               BuildableName = "FSCalendar.framework"
-               BlueprintName = "FSCalendar"
+               BlueprintIdentifier = "3A12C7D21AA15DD2386CFFEC76EB153B"
+               BuildableName = "Pods_EasyTipViewGit.framework"
+               BlueprintName = "Pods-EasyTipViewGit"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

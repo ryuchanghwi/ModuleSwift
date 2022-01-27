@@ -23,6 +23,38 @@
                                     <constraint firstAttribute="height" constant="500" id="Zhj-wo-IE3"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4s-0K-vBX">
+                                <rect key="frame" x="193" y="554" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fDb-L7-OMg">
+                                <rect key="frame" x="0.0" y="595" width="428" height="297"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiaryTableViewCell" rowHeight="50" id="6TO-QB-hcc" customClass="DiaryTableViewCell" customModule="FSCalendarPractice" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6TO-QB-hcc" id="2Zk-hu-OdY">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zke-Lc-ysY">
+                                                    <rect key="frame" x="193" y="11" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="myDiaryLabel" destination="zke-Lc-ysY" id="oNk-0k-V9E"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -30,15 +62,23 @@
                             <constraint firstItem="GgQ-4c-GMe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0XD-YB-dpv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GgQ-4c-GMe" secondAttribute="trailing" id="2Ao-hs-skE"/>
                             <constraint firstItem="GgQ-4c-GMe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3R0-VY-7gc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fDb-L7-OMg" secondAttribute="trailing" id="I9s-uo-Wvg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fDb-L7-OMg" secondAttribute="bottom" id="M85-cR-nND"/>
+                            <constraint firstItem="fDb-L7-OMg" firstAttribute="top" secondItem="q4s-0K-vBX" secondAttribute="bottom" constant="20" id="OdT-xB-LNQ"/>
+                            <constraint firstItem="fDb-L7-OMg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hYM-6P-G0B"/>
+                            <constraint firstItem="q4s-0K-vBX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sH5-Ya-pl8"/>
+                            <constraint firstItem="q4s-0K-vBX" firstAttribute="top" secondItem="GgQ-4c-GMe" secondAttribute="bottom" constant="10" id="ul3-E7-8lJ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="calendarView" destination="GgQ-4c-GMe" id="Rnj-yl-u2d"/>
+                        <outlet property="dateLabel" destination="q4s-0K-vBX" id="2dm-Nm-0AW"/>
+                        <outlet property="diaryTableView" destination="fDb-L7-OMg" id="YkB-a2-2em"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="66"/>
+            <point key="canvasLocation" x="29.439252336448597" y="65.442764578833703"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="kHJ-PN-cvY">
@@ -49,22 +89,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcD-S3-KOC">
-                                <rect key="frame" x="20" y="144" width="388" height="21"/>
+                                <rect key="frame" x="20" y="94" width="388" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KUZ-Zl-vlf">
+                                <rect key="frame" x="40" y="145" width="348" height="34"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ek0-1N-aDX">
+                                <rect key="frame" x="180.66666666666666" y="229" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="saveBtn:" destination="3nU-Ho-Rdz" eventType="touchUpInside" id="fqV-PC-wpn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="usm-ui-PRR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="GcD-S3-KOC" firstAttribute="centerX" secondItem="I3K-Pw-slD" secondAttribute="centerX" id="2aA-B8-XMe"/>
+                            <constraint firstItem="KUZ-Zl-vlf" firstAttribute="centerX" secondItem="I3K-Pw-slD" secondAttribute="centerX" id="5fz-Ts-ZBb"/>
+                            <constraint firstItem="KUZ-Zl-vlf" firstAttribute="top" secondItem="GcD-S3-KOC" secondAttribute="bottom" constant="30" id="Cl8-a6-9gK"/>
+                            <constraint firstItem="Ek0-1N-aDX" firstAttribute="top" secondItem="KUZ-Zl-vlf" secondAttribute="bottom" constant="50" id="Jsr-ke-hG2"/>
                             <constraint firstItem="GcD-S3-KOC" firstAttribute="leading" secondItem="usm-ui-PRR" secondAttribute="leading" constant="20" id="QMa-B6-FCA"/>
-                            <constraint firstItem="GcD-S3-KOC" firstAttribute="top" secondItem="usm-ui-PRR" secondAttribute="top" constant="100" id="dDH-53-ioH"/>
+                            <constraint firstItem="KUZ-Zl-vlf" firstAttribute="leading" secondItem="usm-ui-PRR" secondAttribute="leading" constant="40" id="b7g-Ye-uc3"/>
+                            <constraint firstItem="GcD-S3-KOC" firstAttribute="top" secondItem="usm-ui-PRR" secondAttribute="top" constant="50" id="dDH-53-ioH"/>
+                            <constraint firstItem="Ek0-1N-aDX" firstAttribute="centerX" secondItem="I3K-Pw-slD" secondAttribute="centerX" id="fC5-Au-WUn"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="GcD-S3-KOC" id="b9r-6q-mgd"/>
+                        <outlet property="diaryTextField" destination="KUZ-Zl-vlf" id="pb7-XN-siO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qdh-Zo-f52" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -75,6 +135,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

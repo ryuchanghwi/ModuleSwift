@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EasyTipViewGit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2A-sW-caI">
+                                <rect key="frame" x="161" y="293" width="67" height="31"/>
+                                <color key="backgroundColor" red="0.72406537530000004" green="0.42565894999999998" blue="0.87117266410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="onBtnClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vgP-EX-vaw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gp1-4K-cBp">
+                                <rect key="frame" x="297" y="237" width="67" height="31"/>
+                                <color key="backgroundColor" red="0.72406537530000004" green="0.42565894999999998" blue="0.87117266410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="onBtnClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rjl-dZ-szl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLF-9b-rA4">
+                                <rect key="frame" x="297" y="364" width="67" height="31"/>
+                                <color key="backgroundColor" red="0.72406537530000004" green="0.42565894999999998" blue="0.87117266410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="onBtnClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zYN-sZ-jbA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHb-xb-eFm">
+                                <rect key="frame" x="41" y="363" width="67" height="31"/>
+                                <color key="backgroundColor" red="0.72406537530000004" green="0.42565894999999998" blue="0.87117266410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="onBtnClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fxe-sh-5km"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LN-gK-REh">
+                                <rect key="frame" x="41" y="237" width="67" height="31"/>
+                                <color key="backgroundColor" red="0.72406537530000004" green="0.42565894999999998" blue="0.87117266410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="onBtnClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Its-lu-DT5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f2A-sW-caI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="249" id="BHN-XF-TZ6"/>
+                            <constraint firstItem="cHb-xb-eFm" firstAttribute="top" secondItem="4LN-gK-REh" secondAttribute="bottom" constant="95" id="ES8-jp-EPL"/>
+                            <constraint firstItem="4LN-gK-REh" firstAttribute="baseline" secondItem="Gp1-4K-cBp" secondAttribute="baseline" id="Njo-oG-zlr"/>
+                            <constraint firstItem="4LN-gK-REh" firstAttribute="leading" secondItem="cHb-xb-eFm" secondAttribute="leading" id="QPe-8k-Xdt"/>
+                            <constraint firstItem="Gp1-4K-cBp" firstAttribute="leading" secondItem="HLF-9b-rA4" secondAttribute="leading" id="TZn-cO-3Wi"/>
+                            <constraint firstItem="4LN-gK-REh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="193" id="btJ-2s-Hsh"/>
+                            <constraint firstItem="f2A-sW-caI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="161" id="jKn-8j-LSc"/>
+                            <constraint firstItem="4LN-gK-REh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="nO6-SH-qot"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gp1-4K-cBp" secondAttribute="trailing" constant="50" id="vx1-JG-eRG"/>
+                            <constraint firstItem="HLF-9b-rA4" firstAttribute="top" secondItem="Gp1-4K-cBp" secondAttribute="bottom" constant="96" id="zKh-Qb-CnU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLeadingBtn" destination="cHb-xb-eFm" id="gL2-CX-jRt"/>
+                        <outlet property="bottomTrailingBtn" destination="HLF-9b-rA4" id="lJS-Qw-Qcd"/>
+                        <outlet property="conterBtn" destination="f2A-sW-caI" id="fKn-iq-BX9"/>
+                        <outlet property="topLeadingBtn" destination="4LN-gK-REh" id="VIh-W0-0Hh"/>
+                        <outlet property="toptrailingBtn" destination="Gp1-4K-cBp" id="yNc-9c-STs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="66"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

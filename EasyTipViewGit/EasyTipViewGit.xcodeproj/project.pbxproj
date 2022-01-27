@@ -7,134 +7,129 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5998A96279ED600006B3FFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5998A95279ED600006B3FFA /* AppDelegate.swift */; };
-		A5998A98279ED600006B3FFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5998A97279ED600006B3FFA /* SceneDelegate.swift */; };
-		A5998A9A279ED600006B3FFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5998A99279ED600006B3FFA /* ViewController.swift */; };
-		A5998A9D279ED600006B3FFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5998A9B279ED600006B3FFA /* Main.storyboard */; };
-		A5998A9F279ED603006B3FFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5998A9E279ED603006B3FFA /* Assets.xcassets */; };
-		A5998AA2279ED603006B3FFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5998AA0279ED603006B3FFA /* LaunchScreen.storyboard */; };
-		A5998AAA279FC160006B3FFA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5998AA9279FC160006B3FFA /* SecondViewController.swift */; };
-		A5DC153227A17B9B0009D3E9 /* DiaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC153127A17B9B0009D3E9 /* DiaryTableViewCell.swift */; };
-		B302394647CF0DA7A0FBB264 /* Pods_FSCalendarPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324A6F107909D32EA8ADA117 /* Pods_FSCalendarPractice.framework */; };
+		A5DC151E27A158F40009D3E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC151D27A158F40009D3E9 /* AppDelegate.swift */; };
+		A5DC152027A158F40009D3E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC151F27A158F40009D3E9 /* SceneDelegate.swift */; };
+		A5DC152227A158F40009D3E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC152127A158F40009D3E9 /* ViewController.swift */; };
+		A5DC152527A158F40009D3E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DC152327A158F40009D3E9 /* Main.storyboard */; };
+		A5DC152727A158F60009D3E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DC152627A158F60009D3E9 /* Assets.xcassets */; };
+		A5DC152A27A158F60009D3E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DC152827A158F60009D3E9 /* LaunchScreen.storyboard */; };
+		A8D49D73CD1DB056B7D01990 /* Pods_EasyTipViewGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF9D8BFEF7C1C72494EE54B /* Pods_EasyTipViewGit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		324A6F107909D32EA8ADA117 /* Pods_FSCalendarPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSCalendarPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		684DE758134B2A1A05CC80AC /* Pods-FSCalendarPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCalendarPractice.debug.xcconfig"; path = "Target Support Files/Pods-FSCalendarPractice/Pods-FSCalendarPractice.debug.xcconfig"; sourceTree = "<group>"; };
-		81839773B50CC9FE5C00B22D /* Pods-FSCalendarPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCalendarPractice.release.xcconfig"; path = "Target Support Files/Pods-FSCalendarPractice/Pods-FSCalendarPractice.release.xcconfig"; sourceTree = "<group>"; };
-		A5998A92279ED600006B3FFA /* FSCalendarPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSCalendarPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5998A95279ED600006B3FFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5998A97279ED600006B3FFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A5998A99279ED600006B3FFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A5998A9C279ED600006B3FFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A5998A9E279ED603006B3FFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A5998AA1279ED603006B3FFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A5998AA3279ED603006B3FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5998AA9279FC160006B3FFA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		A5DC153127A17B9B0009D3E9 /* DiaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewCell.swift; sourceTree = "<group>"; };
+		8AF9D8BFEF7C1C72494EE54B /* Pods_EasyTipViewGit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTipViewGit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94210B06702035BE7E526730 /* Pods-EasyTipViewGit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTipViewGit.debug.xcconfig"; path = "Target Support Files/Pods-EasyTipViewGit/Pods-EasyTipViewGit.debug.xcconfig"; sourceTree = "<group>"; };
+		A5DC151A27A158F40009D3E9 /* EasyTipViewGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTipViewGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DC151D27A158F40009D3E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5DC151F27A158F40009D3E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A5DC152127A158F40009D3E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5DC152427A158F40009D3E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5DC152627A158F60009D3E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5DC152927A158F60009D3E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5DC152B27A158F60009D3E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D96A547064C44F4091B79135 /* Pods-EasyTipViewGit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTipViewGit.release.xcconfig"; path = "Target Support Files/Pods-EasyTipViewGit/Pods-EasyTipViewGit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A5998A8F279ED600006B3FFA /* Frameworks */ = {
+		A5DC151727A158F40009D3E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B302394647CF0DA7A0FBB264 /* Pods_FSCalendarPractice.framework in Frameworks */,
+				A8D49D73CD1DB056B7D01990 /* Pods_EasyTipViewGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8DC6F134C72A092147567607 /* Frameworks */ = {
+		1A111A9AE392769CF805EF20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				324A6F107909D32EA8ADA117 /* Pods_FSCalendarPractice.framework */,
+				8AF9D8BFEF7C1C72494EE54B /* Pods_EasyTipViewGit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A5998A89279ED600006B3FFA = {
+		2581869A80F1B95FB1C45765 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A5998A94279ED600006B3FFA /* FSCalendarPractice */,
-				A5998A93279ED600006B3FFA /* Products */,
-				E5A9F3B7063CC8ED98A7C50B /* Pods */,
-				8DC6F134C72A092147567607 /* Frameworks */,
+				94210B06702035BE7E526730 /* Pods-EasyTipViewGit.debug.xcconfig */,
+				D96A547064C44F4091B79135 /* Pods-EasyTipViewGit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A5DC151127A158F40009D3E9 = {
+			isa = PBXGroup;
+			children = (
+				A5DC151C27A158F40009D3E9 /* EasyTipViewGit */,
+				A5DC151B27A158F40009D3E9 /* Products */,
+				2581869A80F1B95FB1C45765 /* Pods */,
+				1A111A9AE392769CF805EF20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		A5998A93279ED600006B3FFA /* Products */ = {
+		A5DC151B27A158F40009D3E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A5998A92279ED600006B3FFA /* FSCalendarPractice.app */,
+				A5DC151A27A158F40009D3E9 /* EasyTipViewGit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A5998A94279ED600006B3FFA /* FSCalendarPractice */ = {
+		A5DC151C27A158F40009D3E9 /* EasyTipViewGit */ = {
 			isa = PBXGroup;
 			children = (
-				A5998A95279ED600006B3FFA /* AppDelegate.swift */,
-				A5998A97279ED600006B3FFA /* SceneDelegate.swift */,
-				A5998A99279ED600006B3FFA /* ViewController.swift */,
-				A5998A9B279ED600006B3FFA /* Main.storyboard */,
-				A5998A9E279ED603006B3FFA /* Assets.xcassets */,
-				A5998AA0279ED603006B3FFA /* LaunchScreen.storyboard */,
-				A5998AA3279ED603006B3FFA /* Info.plist */,
-				A5998AA9279FC160006B3FFA /* SecondViewController.swift */,
-				A5DC153127A17B9B0009D3E9 /* DiaryTableViewCell.swift */,
+				A5DC151D27A158F40009D3E9 /* AppDelegate.swift */,
+				A5DC151F27A158F40009D3E9 /* SceneDelegate.swift */,
+				A5DC152127A158F40009D3E9 /* ViewController.swift */,
+				A5DC152327A158F40009D3E9 /* Main.storyboard */,
+				A5DC152627A158F60009D3E9 /* Assets.xcassets */,
+				A5DC152827A158F60009D3E9 /* LaunchScreen.storyboard */,
+				A5DC152B27A158F60009D3E9 /* Info.plist */,
 			);
-			path = FSCalendarPractice;
-			sourceTree = "<group>";
-		};
-		E5A9F3B7063CC8ED98A7C50B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				684DE758134B2A1A05CC80AC /* Pods-FSCalendarPractice.debug.xcconfig */,
-				81839773B50CC9FE5C00B22D /* Pods-FSCalendarPractice.release.xcconfig */,
-			);
-			path = Pods;
+			path = EasyTipViewGit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A5998A91279ED600006B3FFA /* FSCalendarPractice */ = {
+		A5DC151927A158F40009D3E9 /* EasyTipViewGit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A5998AA6279ED603006B3FFA /* Build configuration list for PBXNativeTarget "FSCalendarPractice" */;
+			buildConfigurationList = A5DC152E27A158F60009D3E9 /* Build configuration list for PBXNativeTarget "EasyTipViewGit" */;
 			buildPhases = (
-				242C5A40E2470A0EB7D8EAD9 /* [CP] Check Pods Manifest.lock */,
-				A5998A8E279ED600006B3FFA /* Sources */,
-				A5998A8F279ED600006B3FFA /* Frameworks */,
-				A5998A90279ED600006B3FFA /* Resources */,
-				C20BF1EDBEFED6764843D0AA /* [CP] Embed Pods Frameworks */,
+				FFCDD9DCF05B001B1C8607E8 /* [CP] Check Pods Manifest.lock */,
+				A5DC151627A158F40009D3E9 /* Sources */,
+				A5DC151727A158F40009D3E9 /* Frameworks */,
+				A5DC151827A158F40009D3E9 /* Resources */,
+				0C6C395EF4E712598DA40C03 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FSCalendarPractice;
-			productName = FSCalendarPractice;
-			productReference = A5998A92279ED600006B3FFA /* FSCalendarPractice.app */;
+			name = EasyTipViewGit;
+			productName = EasyTipViewGit;
+			productReference = A5DC151A27A158F40009D3E9 /* EasyTipViewGit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A5998A8A279ED600006B3FFA /* Project object */ = {
+		A5DC151227A158F40009D3E9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					A5998A91279ED600006B3FFA = {
+					A5DC151927A158F40009D3E9 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = A5998A8D279ED600006B3FFA /* Build configuration list for PBXProject "FSCalendarPractice" */;
+			buildConfigurationList = A5DC151527A158F40009D3E9 /* Build configuration list for PBXProject "EasyTipViewGit" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -142,31 +137,48 @@
 				en,
 				Base,
 			);
-			mainGroup = A5998A89279ED600006B3FFA;
-			productRefGroup = A5998A93279ED600006B3FFA /* Products */;
+			mainGroup = A5DC151127A158F40009D3E9;
+			productRefGroup = A5DC151B27A158F40009D3E9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A5998A91279ED600006B3FFA /* FSCalendarPractice */,
+				A5DC151927A158F40009D3E9 /* EasyTipViewGit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A5998A90279ED600006B3FFA /* Resources */ = {
+		A5DC151827A158F40009D3E9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5998AA2279ED603006B3FFA /* LaunchScreen.storyboard in Resources */,
-				A5998A9F279ED603006B3FFA /* Assets.xcassets in Resources */,
-				A5998A9D279ED600006B3FFA /* Main.storyboard in Resources */,
+				A5DC152A27A158F60009D3E9 /* LaunchScreen.storyboard in Resources */,
+				A5DC152727A158F60009D3E9 /* Assets.xcassets in Resources */,
+				A5DC152527A158F40009D3E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		242C5A40E2470A0EB7D8EAD9 /* [CP] Check Pods Manifest.lock */ = {
+		0C6C395EF4E712598DA40C03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyTipViewGit/Pods-EasyTipViewGit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyTipViewGit/Pods-EasyTipViewGit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyTipViewGit/Pods-EasyTipViewGit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFCDD9DCF05B001B1C8607E8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -181,60 +193,41 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FSCalendarPractice-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EasyTipViewGit-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C20BF1EDBEFED6764843D0AA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FSCalendarPractice/Pods-FSCalendarPractice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FSCalendarPractice/Pods-FSCalendarPractice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FSCalendarPractice/Pods-FSCalendarPractice-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A5998A8E279ED600006B3FFA /* Sources */ = {
+		A5DC151627A158F40009D3E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5998AAA279FC160006B3FFA /* SecondViewController.swift in Sources */,
-				A5DC153227A17B9B0009D3E9 /* DiaryTableViewCell.swift in Sources */,
-				A5998A9A279ED600006B3FFA /* ViewController.swift in Sources */,
-				A5998A96279ED600006B3FFA /* AppDelegate.swift in Sources */,
-				A5998A98279ED600006B3FFA /* SceneDelegate.swift in Sources */,
+				A5DC152227A158F40009D3E9 /* ViewController.swift in Sources */,
+				A5DC151E27A158F40009D3E9 /* AppDelegate.swift in Sources */,
+				A5DC152027A158F40009D3E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A5998A9B279ED600006B3FFA /* Main.storyboard */ = {
+		A5DC152327A158F40009D3E9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A5998A9C279ED600006B3FFA /* Base */,
+				A5DC152427A158F40009D3E9 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A5998AA0279ED603006B3FFA /* LaunchScreen.storyboard */ = {
+		A5DC152827A158F60009D3E9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A5998AA1279ED603006B3FFA /* Base */,
+				A5DC152927A158F60009D3E9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -242,7 +235,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A5998AA4279ED603006B3FFA /* Debug */ = {
+		A5DC152C27A158F60009D3E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -303,7 +296,7 @@
 			};
 			name = Debug;
 		};
-		A5998AA5279ED603006B3FFA /* Release */ = {
+		A5DC152D27A158F60009D3E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -358,16 +351,16 @@
 			};
 			name = Release;
 		};
-		A5998AA7279ED603006B3FFA /* Debug */ = {
+		A5DC152F27A158F60009D3E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 684DE758134B2A1A05CC80AC /* Pods-FSCalendarPractice.debug.xcconfig */;
+			baseConfigurationReference = 94210B06702035BE7E526730 /* Pods-EasyTipViewGit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FSCalendarPractice/Info.plist;
+				INFOPLIST_FILE = EasyTipViewGit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -378,7 +371,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = project.FSCalendarPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = project.EasyTipViewGit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -386,16 +379,16 @@
 			};
 			name = Debug;
 		};
-		A5998AA8279ED603006B3FFA /* Release */ = {
+		A5DC153027A158F60009D3E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81839773B50CC9FE5C00B22D /* Pods-FSCalendarPractice.release.xcconfig */;
+			baseConfigurationReference = D96A547064C44F4091B79135 /* Pods-EasyTipViewGit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FSCalendarPractice/Info.plist;
+				INFOPLIST_FILE = EasyTipViewGit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -406,7 +399,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = project.FSCalendarPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = project.EasyTipViewGit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -417,25 +410,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A5998A8D279ED600006B3FFA /* Build configuration list for PBXProject "FSCalendarPractice" */ = {
+		A5DC151527A158F40009D3E9 /* Build configuration list for PBXProject "EasyTipViewGit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A5998AA4279ED603006B3FFA /* Debug */,
-				A5998AA5279ED603006B3FFA /* Release */,
+				A5DC152C27A158F60009D3E9 /* Debug */,
+				A5DC152D27A158F60009D3E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5998AA6279ED603006B3FFA /* Build configuration list for PBXNativeTarget "FSCalendarPractice" */ = {
+		A5DC152E27A158F60009D3E9 /* Build configuration list for PBXNativeTarget "EasyTipViewGit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A5998AA7279ED603006B3FFA /* Debug */,
-				A5998AA8279ED603006B3FFA /* Release */,
+				A5DC152F27A158F60009D3E9 /* Debug */,
+				A5DC153027A158F60009D3E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A5998A8A279ED600006B3FFA /* Project object */;
+	rootObject = A5DC151227A158F40009D3E9 /* Project object */;
 }
