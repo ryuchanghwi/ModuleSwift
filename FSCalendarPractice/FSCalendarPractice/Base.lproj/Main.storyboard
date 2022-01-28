@@ -30,7 +30,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fDb-L7-OMg">
-                                <rect key="frame" x="0.0" y="595" width="428" height="297"/>
+                                <rect key="frame" x="0.0" y="595" width="428" height="248"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiaryTableViewCell" rowHeight="50" id="6TO-QB-hcc" customClass="DiaryTableViewCell" customModule="FSCalendarPractice" customModuleProvider="target">
@@ -55,10 +55,19 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4g3-Hd-cjf">
+                                <rect key="frame" x="180.66666666666666" y="866" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="moveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfe-dv-IXk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="4g3-Hd-cjf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Kf-7H-ZAr"/>
                             <constraint firstItem="GgQ-4c-GMe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0XD-YB-dpv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GgQ-4c-GMe" secondAttribute="trailing" id="2Ao-hs-skE"/>
                             <constraint firstItem="GgQ-4c-GMe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3R0-VY-7gc"/>
@@ -66,10 +75,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fDb-L7-OMg" secondAttribute="bottom" id="M85-cR-nND"/>
                             <constraint firstItem="fDb-L7-OMg" firstAttribute="top" secondItem="q4s-0K-vBX" secondAttribute="bottom" constant="20" id="OdT-xB-LNQ"/>
                             <constraint firstItem="fDb-L7-OMg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hYM-6P-G0B"/>
+                            <constraint firstAttribute="bottom" secondItem="4g3-Hd-cjf" secondAttribute="bottom" constant="29" id="jHU-BX-tB0"/>
                             <constraint firstItem="q4s-0K-vBX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sH5-Ya-pl8"/>
                             <constraint firstItem="q4s-0K-vBX" firstAttribute="top" secondItem="GgQ-4c-GMe" secondAttribute="bottom" constant="10" id="ul3-E7-8lJ"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="calendarView" destination="GgQ-4c-GMe" id="Rnj-yl-u2d"/>
                         <outlet property="dateLabel" destination="q4s-0K-vBX" id="2dm-Nm-0AW"/>
@@ -123,8 +135,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="dateLabel" destination="GcD-S3-KOC" id="b9r-6q-mgd"/>
                         <outlet property="diaryTextField" destination="KUZ-Zl-vlf" id="pb7-XN-siO"/>
+                        <outlet property="secondDateLabel" destination="GcD-S3-KOC" id="1DB-cp-Olk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qdh-Zo-f52" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

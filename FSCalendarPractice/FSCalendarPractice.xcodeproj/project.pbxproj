@@ -14,6 +14,7 @@
 		A5998A9F279ED603006B3FFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5998A9E279ED603006B3FFA /* Assets.xcassets */; };
 		A5998AA2279ED603006B3FFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5998AA0279ED603006B3FFA /* LaunchScreen.storyboard */; };
 		A5998AAA279FC160006B3FFA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5998AA9279FC160006B3FFA /* SecondViewController.swift */; };
+		A5A0BFDA27A3B2AD00B3BEF5 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A0BFD927A3B2AD00B3BEF5 /* Event.swift */; };
 		A5DC153227A17B9B0009D3E9 /* DiaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC153127A17B9B0009D3E9 /* DiaryTableViewCell.swift */; };
 		B302394647CF0DA7A0FBB264 /* Pods_FSCalendarPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324A6F107909D32EA8ADA117 /* Pods_FSCalendarPractice.framework */; };
 /* End PBXBuildFile section */
@@ -31,6 +32,7 @@
 		A5998AA1279ED603006B3FFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5998AA3279ED603006B3FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5998AA9279FC160006B3FFA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A5A0BFD927A3B2AD00B3BEF5 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		A5DC153127A17B9B0009D3E9 /* DiaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				A5998AA3279ED603006B3FFA /* Info.plist */,
 				A5998AA9279FC160006B3FFA /* SecondViewController.swift */,
 				A5DC153127A17B9B0009D3E9 /* DiaryTableViewCell.swift */,
+				A5A0BFD927A3B2AD00B3BEF5 /* Event.swift */,
 			);
 			path = FSCalendarPractice;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				A5DC153227A17B9B0009D3E9 /* DiaryTableViewCell.swift in Sources */,
 				A5998A9A279ED600006B3FFA /* ViewController.swift in Sources */,
 				A5998A96279ED600006B3FFA /* AppDelegate.swift in Sources */,
+				A5A0BFDA27A3B2AD00B3BEF5 /* Event.swift in Sources */,
 				A5998A98279ED600006B3FFA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
