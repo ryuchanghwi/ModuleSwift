@@ -74,7 +74,7 @@ extension UITextField {
 extension UIButton {
     var isValid : Bool {
         get {
-            backgroundColor == .yellow
+            return backgroundColor == .yellow
         }
         set {
             backgroundColor = newValue ? .yellow : .lightGray

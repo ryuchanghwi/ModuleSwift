@@ -47,6 +47,7 @@ class SecondViewController: UIViewController {
         dismiss(animated: true, completion: nil)
         print(newEvent.name, "이벤트 네임")
         print(newEvent)
+        Vi
         
     }
 }

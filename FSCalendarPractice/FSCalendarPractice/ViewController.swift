@@ -11,6 +11,9 @@ import FSCalendar
 var selectedDate = Date()
 var formatter = DateFormatter()
 
+
+//let mySelectedData = [Data]()
+
 class ViewController: UIViewController, UITextViewDelegate, mySelectedDate {
     
     
@@ -56,6 +59,13 @@ class ViewController: UIViewController, UITextViewDelegate, mySelectedDate {
         diaryTableView.reloadData()
     }
 
+    
+    func selectedDataCount() {
+        let mySelectedData = [Data]()
+        if mySelectedData.count > 2 {
+            return
+        }
+    }
 
 
     
@@ -91,6 +101,7 @@ class ViewController: UIViewController, UITextViewDelegate, mySelectedDate {
         
         
         
+        
         //달력의 요일 글자 바꾸는 방법
         calendarView.locale = Locale(identifier: "ko_KR")
         
@@ -100,6 +111,18 @@ class ViewController: UIViewController, UITextViewDelegate, mySelectedDate {
         calendarView.appearance.weekdayFont = UIFont.boldSystemFont(ofSize: 16)
         
         calendarView.appearance.eventDefaultColor = .black
+        
+        
+        //다중 선택
+        calendarView.allowsMultipleSelection = true
+        
+        //드래그 동작을 다중 선택
+        calendarView.swipeToChooseGesture.isEnabled = true
+        
+        //스크롤 작동
+//        calendarView.scrollEnabled = true
+        
+        
     }
     
     
@@ -140,7 +163,10 @@ extension ViewController: FSCalendarDelegate, FSCalendarDataSource {
         self.dateLabel.text = formatter.string(from: date)
         
         
+        
         print(selectedDate, "???")
+        
+        
         
     }
     
@@ -196,6 +222,15 @@ extension ViewController: FSCalendarDelegate, FSCalendarDataSource {
             return 1
         default:
             return 0
+        }
+    }
+    
+    
+    func calendar(_ calendar: FSCalendar, shouldSelect date: Date, at monthPosition: FSCalendarMonthPosition) -> Bool {
+        if calendarView.selectedDates.count > 3 {
+            return false
+        } else {
+            return true
         }
     }
     
