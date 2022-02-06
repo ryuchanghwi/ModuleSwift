@@ -151,11 +151,11 @@ extension ViewController: FSCalendarDelegate, FSCalendarDataSource {
         diaryTableView.reloadData() //날짜 선택할 때 해당 리스트 리로드 하기
         
         
-//        guard let modalPresentView = self.storyboard?.instantiateViewController(identifier: "SecondViewController") as? SecondViewController else { return }
-//        // 날짜를 원하는 형식으로 저장하기 위한 방법입니다.
-//        modalPresentView.date = formatter.string(from: date)
-//        self.present(modalPresentView, animated: true, completion: nil)
-        
+        guard let modalPresentView = self.storyboard?.instantiateViewController(identifier: "SecondViewController") as? SecondViewController else { return }
+        // 날짜를 원하는 형식으로 저장하기 위한 방법입니다.
+        modalPresentView.date = formatter.string(from: date)
+        self.present(modalPresentView, animated: true, completion: nil)
+        modalPresentView.secondDateLabel.text = formatter.string(from: date)
         
         diaryTableView.reloadData()
         formatter.dateFormat = "yyyy-MM-dd"

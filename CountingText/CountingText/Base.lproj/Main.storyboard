@@ -32,25 +32,58 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnT-Jn-EJ0">
+                                <rect key="frame" x="20" y="512" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9m5-q0-Kmj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="버튼"/>
+                                <connections>
+                                    <action selector="myBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nyz-eK-Hst"/>
+                                    <segue destination="wdT-e1-Teu" kind="show" id="Fni-1b-VRT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EnT-Jn-EJ0" secondAttribute="bottom" constant="300" id="Sl0-lx-kcr"/>
                             <constraint firstItem="JeU-JP-XLj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Z6t-rh-032"/>
+                            <constraint firstItem="EnT-Jn-EJ0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eNz-WM-b7I"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k3H-vN-aS5" secondAttribute="trailing" constant="10" id="hKG-KY-DIa"/>
                             <constraint firstItem="k3H-vN-aS5" firstAttribute="top" secondItem="JeU-JP-XLj" secondAttribute="bottom" constant="10" id="kyz-sA-XkV"/>
                             <constraint firstItem="JeU-JP-XLj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="mLQ-a5-Ttf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JeU-JP-XLj" secondAttribute="trailing" constant="20" id="pTT-Fm-dGa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EnT-Jn-EJ0" secondAttribute="trailing" constant="20" id="r3N-aa-Syf"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="countLabel" destination="k3H-vN-aS5" id="6bP-ij-QwJ"/>
+                        <outlet property="myButton" destination="EnT-Jn-EJ0" id="MCz-Kc-QQu"/>
                         <outlet property="myTextView" destination="JeU-JP-XLj" id="XbK-2D-Dak"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="30" y="80"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PpR-ow-WtG">
+            <objects>
+                <viewController id="wdT-e1-Teu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cSL-Ue-2eS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Zng-Pb-8Lv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fao-U9-23o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cjV-Mt-3fk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="761" y="88"/>
         </scene>
     </scenes>
     <resources>

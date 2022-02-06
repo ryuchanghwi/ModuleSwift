@@ -11,7 +11,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var myTextView: UITextView!
     
-
+    @IBOutlet weak var myButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +31,23 @@ class ViewController: UIViewController {
         myTextView.layer.borderWidth = 1
         myTextView.layer.borderColor = UIColor.black.cgColor
 
+        
+        
+        myButton.isEnabled = false
     }
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.myTextView.resignFirstResponder()
     }
+    
+    
+    
+    @IBAction func myBtn(_ sender: Any) {
+    }
+    
+    
+    
 
 }
 
@@ -70,8 +82,17 @@ extension ViewController: UITextViewDelegate {
         print(changedText, "chagedText")
         countLabel.text = "\(changedText.count)/100"
         
+        if changedText.count < 10 {
+            myButton.isEnabled = false
+            myButton.backgroundColor = .black
+        } else {
+            myButton.isEnabled = true
+            myButton.backgroundColor = .systemPink
+        }
+        
         return true
     }
+    
     
     
     
