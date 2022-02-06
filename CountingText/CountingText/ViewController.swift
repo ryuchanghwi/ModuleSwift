@@ -21,6 +21,8 @@ class ViewController: UIViewController {
         //처음 화면이 로드되었을 때 플레이스 홀더처럼 보이게끔 만들어주기
         myTextView.text = "플레이스홀더입니다."
         myTextView.textColor = UIColor.lightGray
+        
+        //처음 화면이 로드되었을 때 카우트 되지 않았음을 보여주기
         countLabel.text = "0/100"
         
         
@@ -64,15 +66,9 @@ extension ViewController: UITextViewDelegate {
         
         
         let changedText = currentText.replacingCharacters(in: stringRange, with: text)
+        print(currentText)
+        print(changedText, "chagedText")
         countLabel.text = "\(changedText.count)/100"
-        
-        if changedText.count < 10 {
-            myTextView.textColor = UIColor.red
-        } else {
-            myTextView.textColor = UIColor.blue
-        }
-        
-        
         
         return true
     }
@@ -82,3 +78,9 @@ extension ViewController: UITextViewDelegate {
 
 
 }
+//if changedText.count < 10 {
+//    myTextView.textColor = UIColor.red
+//} else {
+//    myTextView.textColor = UIColor.blue
+//}
+//
