@@ -15,14 +15,11 @@ var formatter = DateFormatter()
 //let mySelectedData = [Data]()
 
 class ViewController: UIViewController, UITextViewDelegate, mySelectedDate {
-    
-    
     func clickedDate(data: Date) {
         selectedDate = data
     }
     
-    
-    
+
 
     var date: String!
     var diaryList = [String]()
@@ -43,11 +40,11 @@ class ViewController: UIViewController, UITextViewDelegate, mySelectedDate {
         calendarView.dataSource = self
         diaryTableView.delegate = self
         diaryTableView.dataSource = self
-        
+
         
         formatter.dateFormat = "yyyy-MM-dd"
         self.dateLabel.text = formatter.string(from: calendarView.today!)
-        
+        diaryTableView.reloadData()
         
         
    
@@ -114,7 +111,7 @@ class ViewController: UIViewController, UITextViewDelegate, mySelectedDate {
         
         
         //다중 선택
-        calendarView.allowsMultipleSelection = true
+        calendarView.allowsMultipleSelection = false
         
         //드래그 동작을 다중 선택
         calendarView.swipeToChooseGesture.isEnabled = true
@@ -154,8 +151,8 @@ extension ViewController: FSCalendarDelegate, FSCalendarDataSource {
         guard let modalPresentView = self.storyboard?.instantiateViewController(identifier: "SecondViewController") as? SecondViewController else { return }
         // 날짜를 원하는 형식으로 저장하기 위한 방법입니다.
         modalPresentView.date = formatter.string(from: date)
-        self.present(modalPresentView, animated: true, completion: nil)
-        modalPresentView.secondDateLabel.text = formatter.string(from: date)
+//        self.present(modalPresentView, animated: true, completion: nil)
+//        modalPresentView.secondDateLabel.text = formatter.string(from: date) 
         
         diaryTableView.reloadData()
         formatter.dateFormat = "yyyy-MM-dd"
@@ -165,6 +162,7 @@ extension ViewController: FSCalendarDelegate, FSCalendarDataSource {
         
         
         print(selectedDate, "???")
+
         
         
         
@@ -187,52 +185,52 @@ extension ViewController: FSCalendarDelegate, FSCalendarDataSource {
 //    }
 
     
-    func calendar(_ calendar: FSCalendar, imageFor date: Date) -> UIImage? {
-        switch formatter.string(from: date) {
-        case formatter.string(from: calendar.today! + 1):
-            return UIImage(named: "heart")
-        default:
-            return nil
-        }
-    }
+//    func calendar(_ calendar: FSCalendar, imageFor date: Date) -> UIImage? {
+//        switch formatter.string(from: date) {
+//        case formatter.string(from: calendar.today! + 1):
+//            return UIImage(named: "heart")
+//        default:
+//            return nil
+//        }
+//    }
+//
+//    func calendar(_ calendar: FSCalendar, titleFor date: Date) -> String? {
+//        switch formatter.string(from: date) {
+//        case formatter.string(from: calendarView.today!):
+//            return "오늘"
+//
+//        default:
+//            return nil
+//        }
+//    }
     
-    func calendar(_ calendar: FSCalendar, titleFor date: Date) -> String? {
-        switch formatter.string(from: date) {
-        case formatter.string(from: calendarView.today!):
-            return "오늘"
-
-        default:
-            return nil
-        }
-    }
+//    func calendar(_ calendar: FSCalendar, subtitleFor date: Date) -> String? {
+//        switch formatter.string(from: date) {
+//        case formatter.string(from: calendarView.selectedDate ?? calendarView.today!):
+////            print(calendarView.selectedDate ?? calendarView.today! , "선택된 날짜")
+//            return "선택됨"
+//        default:
+//            return nil
+//        }
+//    }
     
-    func calendar(_ calendar: FSCalendar, subtitleFor date: Date) -> String? {
-        switch formatter.string(from: date) {
-        case formatter.string(from: calendarView.selectedDate ?? calendarView.today!):
-//            print(calendarView.selectedDate ?? calendarView.today! , "선택된 날짜")
-            return "선택됨"
-        default:
-            return nil
-        }
-    }
-    
-    func calendar(_ calendar: FSCalendar, numberOfEventsFor date: Date) -> Int {
-        switch formatter.string(from: date) {
-        case formatter.string(from: calendarView.today!):
-            return 1
-        default:
-            return 0
-        }
-    }
+//    func calendar(_ calendar: FSCalendar, numberOfEventsFor date: Date) -> Int {
+//        switch formatter.string(from: date) {
+//        case formatter.string(from: calendarView.today!):
+//            return 1
+//        default:
+//            return 0
+//        }
+//    }
     
     
-    func calendar(_ calendar: FSCalendar, shouldSelect date: Date, at monthPosition: FSCalendarMonthPosition) -> Bool {
-        if calendarView.selectedDates.count > 3 {
-            return false
-        } else {
-            return true
-        }
-    }
+//    func calendar(_ calendar: FSCalendar, shouldSelect date: Date, at monthPosition: FSCalendarMonthPosition) -> Bool {
+//        if calendarView.selectedDates.count > 3 {
+//            return false
+//        } else {
+//            return true
+//        }
+//    }
     
     
 
@@ -243,28 +241,25 @@ extension ViewController: FSCalendarDelegate, FSCalendarDataSource {
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Event().eventForDate(date: selectedDate).count
-        print(Event().eventForDate(date: selectedDate).count, "카운트")
-        
+        return Event().eventsForDate(date: selectedDate).count
+
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        guard let cell = tableView.dequeueReusableCell(withIdentifier: "DiaryTableViewCell", for: indexPath) as? DiaryTableViewCell else { return UITableViewCell() }
-//        cell.myDiaryLabel.text = diaryList[indexPath.row]
-//        return cell
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "DiaryTableViewCell") as! DiaryTableViewCell
-        let event = Event().eventForDate(date: selectedDate)[indexPath.row]
+        let event = Event().eventsForDate(date: selectedDate)[indexPath.row]
         cell.myDiaryLabel.text = event.name
         print(cell)
         print(event)
 
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
-    
+
 }

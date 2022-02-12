@@ -43,6 +43,12 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxA-YE-Vax">
+                                <rect key="frame" x="352.5" y="334" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -50,10 +56,13 @@
                             <constraint firstItem="XTq-Uh-rDP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3dg-2c-4gy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XTq-Uh-rDP" secondAttribute="trailing" constant="20" id="Ayz-7N-tZQ"/>
                             <constraint firstItem="XTq-Uh-rDP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="IdK-5a-NDu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AxA-YE-Vax" secondAttribute="trailing" constant="20" id="W8e-bw-hcp"/>
+                            <constraint firstItem="AxA-YE-Vax" firstAttribute="top" secondItem="XTq-Uh-rDP" secondAttribute="bottom" constant="20" id="jfq-I2-ZyN"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="myBtn" destination="X4l-tO-GIs" id="SyU-MV-APP"/>
+                        <outlet property="myLabel" destination="AxA-YE-Vax" id="xXU-Zl-O3I"/>
                         <outlet property="passwordConfirmTextField" destination="EWI-m7-hnb" id="lxn-1p-YIh"/>
                         <outlet property="passwordTextField" destination="2HL-iG-xXG" id="Ckr-Lr-Weh"/>
                     </connections>

@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordConfirmTextField: UITextField!
     @IBOutlet weak var myBtn: UIButton!
     
+    @IBOutlet weak var myLabel: UILabel!
     var viewModel: MyViewModel!
     
     //메모리 관리
@@ -49,7 +50,7 @@ class ViewController: UIViewController {
             .print()
             .receive(on: RunLoop.main)
         //구독
-            .assign(to: \.isValid, on: myBtn)
+            .assign(to: \.isValid, on: myLabel)
             .store(in: &mySubcription)
     }
 
@@ -80,6 +81,20 @@ extension UIButton {
             backgroundColor = newValue ? .yellow : .lightGray
             isEnabled = newValue
             setTitleColor(newValue ? .blue : .white, for: .normal)
+        }
+    }
+}
+
+extension UILabel {
+    var isValid: Bool {
+        get {
+            return textColor == .blue
+        }
+        set {
+            textColor = newValue ? .blue : .red
+            text = newValue ? "맞았음" : "틀렸음"
+
+
         }
     }
 }

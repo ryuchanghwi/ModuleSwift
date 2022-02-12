@@ -16,7 +16,6 @@ protocol mySelectedDate {
 
 
 class SecondViewController: UIViewController {
-    
     var text: String = ""
     var delegate: mySelectedDate?
     var diaryDate: Date!
@@ -33,21 +32,18 @@ class SecondViewController: UIViewController {
         
         
     }
-
-    
-
-
     
     @IBAction func saveBtn(_ sender: Any) {
+        
         let newEvent = Event()
-        newEvent.id = eventList.count
+        newEvent.id = eventsList.count
         newEvent.name = diaryTextField.text
-        newEvent.myDate = selectedDate
-        eventList.append(newEvent)
+//        print(newEvent.name)
+        if let myDate = newEvent.date {
+            delegate?.clickedDate(data: myDate)
+        }
+        
+        eventsList.append(newEvent)
         dismiss(animated: true, completion: nil)
-        print(newEvent.name, "이벤트 네임")
-        print(newEvent)
-        
-        
     }
 }
